@@ -1,0 +1,35 @@
+{
+  "name": "cssVarListener",
+  "version": "0.0.2",
+  "description": "Give meaning to your Custom Properties in CSS with a javascript callback. Every time CSS applies your css var to an element (or removes it), a callback is called.",
+  "main": "css-var-listener.js",
+  "scripts": {
+    "test": "grunt test --stack",
+    "prepublish": "./node_modules/.bin/grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/propjockey/css-var-listener.git"
+  },
+  "keywords": [
+    "css",
+    "custom property",
+    "css var"
+  ],
+  "author": "James0x57",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/propjockey/css-var-listener/issues"
+  },
+  "homepage": "https://github.com/propjockey/css-var-listener#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.3.2",
+    "grunt-eslint": "^21.0.0",
+    "grunt-steal": "^2.0.0",
+    "grunt-testee": "^1.1.0",
+    "steal": "^2.1.14",
+    "steal-qunit": "^1.0.2",
+    "steal-tools": "^2.0.11"
+  }
+}
