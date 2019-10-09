@@ -1,4 +1,4 @@
-/*cssVarListener@0.0.2#css-var-listener*/
+/*css-var-listener@0.0.2#css-var-listener*/
 define(['exports'], function (exports) {
     'use strict';
     Object.defineProperty(exports, '__esModule', { value: true });
