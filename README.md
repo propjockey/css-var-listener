@@ -4,6 +4,8 @@
 
 doesn't rely on `getComputedStyle()` or other [functions that cause reflow](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
 
+[install from NPM:](https://www.npmjs.com/package/css-var-listener)
+
 `npm install css-var-listener`
 
 # Usage
