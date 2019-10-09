@@ -1,6 +1,6 @@
 {
   "name": "css-var-listener",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Give meaning to your Custom Properties in CSS with a javascript callback. Every time CSS applies your css var to an element (or removes it), a callback is called.",
   "main": "css-var-listener.js",
   "scripts": {

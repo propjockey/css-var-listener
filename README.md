@@ -16,10 +16,13 @@ cssVarListener.add("--yourvar", callback, options)
 
 Where:
  * `"--yourvar"` is any custom property you want to add functionality to
- * callback is a function that takes 3 arguments:
-   - `element` - the element your CSS is applying `"--yourvar"` to
-   - `newValue` - the value of `"--yourvar"` as determined by the document's stylesheets (see `Value determination and specificity` at the bottom of this readme)
+ * callback is a function that takes 1 argument, wich is an object containing:
+   - `target` - the element your CSS is applying `"--yourvar"` to
+   - `value` - the value of `"--yourvar"` as determined by the document's stylesheets (see `Value determination and specificity` at the bottom of this readme)
    - `oldValue` - the previous value of `"--yourvar"` if a change in the DOM, :hover states, or stylesheet adding/removal caused it to change
+   - `compiledValue` - the value of `"--yourvar"` with any `var(--dep)` replaced with its value as determined by the document's stylesheets
+   - `oldCompiledValue` - the previous compiled value
+   - `prop` - the css variable name `"--yourvar"`
  * options is an object with optional properties:
    - `ignoreAttr: "data-optional-ignore-attr"` causes DOM changes within to be ignored (see `Ignoring Observer Changes` below)
 
